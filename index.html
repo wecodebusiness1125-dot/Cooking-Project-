@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>요리 프로젝트 소개</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Pretendard', Arial, sans-serif;
+      background: radial-gradient(circle at top, #fff6e5, #f1f3f8 60%);
+      color: #2f3640;
+    }
+
+    header {
+      padding: 90px 20px 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #ff9f1a, #ff6b6b);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      animation: fadeDown 1.1s ease-out;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: white;
+      border-radius: 50% 50% 0 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      margin-top: 14px;
+      font-size: 19px;
+      opacity: 0.95;
+    }
+
+    section {
+      max-width: 980px;
+      margin: 0 auto 48px;
+      background: white;
+      border-radius: 22px;
+      padding: 36px 38px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+      animation: fadeUp 1s ease;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge {
+      background: linear-gradient(135deg, #ff9f1a, #ff6b6b);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .intro-text {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #ffffff, #f7f9ff);
+      border-radius: 20px;
+      padding: 22px 18px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .card::before {
+      content: "🍽️";
+      font-size: 20px;
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      opacity: 0.4;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 36px rgba(0,0,0,0.14);
+    }
+
+    .card strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    ol {
+      padding-left: 22px;
+      line-height: 2;
+      font-size: 16.5px;
+    }
+
+    .info-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 26px;
+    }
+
+    .info {
+      background: linear-gradient(135deg, #fff6e5, #ffffff);
+      border-radius: 20px;
+      padding: 26px;
+      position: relative;
+    }
+    .info strong {
+      font-size: 17px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 10px 70px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍚 스팸·참치 마요 덮밥</h1>
+  <p>간단하지만 든든한 한 그릇 요리 프로젝트</p>
+</header>
+
+<section>
+  <h2>📌 프로젝트 소개 <span class="badge">INTRO</span></h2>
+  <p class="intro-text">
+    스팸·참치 마요 덮밥은 여러 재료를 밥과 함께 섞어 만드는 한 그릇 요리이다.
+    조리 과정이 간단하여 학교 요리 프로젝트에 적합하며,
+    위생과 안전을 고려해 짧은 시간 안에 완성할 수 있다.
+  </p>
+</section>
+
+<section>
+  <h2>🧺 사용 재료 <span class="badge">INGREDIENTS</span></h2>
+  <div class="grid">
+    <div class="card"><strong>스팸</strong>2캔</div>
+    <div class="card"><strong>참치</strong>3캔</div>
+    <div class="card"><strong>계란</strong>2개</div>
+    <div class="card"><strong>밥</strong>적당량</div>
+    <div class="card"><strong>마요네즈</strong>약간</div>
+    <div class="card"><strong>참기름</strong>약간</div>
+    <div class="card"><strong>참깨</strong>약간</div>
+    <div class="card"><strong>김</strong>1봉</div>
+    <div class="card"><strong>양상추</strong>1개</div>
+    <div class="card"><strong>김치</strong>반찬용</div>
+  </div>
+</section>
+
+<section>
+  <h2>👩‍🍳 조리 순서 <span class="badge">PROCESS</span></h2>
+  <ol>
+    <li>조리 전 손을 깨끗이 씻고 재료를 준비한다.</li>
+    <li>스팸은 잘게 썰어 노릇하게 굽는다.</li>
+    <li>계란은 풀어 스크램블 에그로 만든다.</li>
+    <li>참치는 기름을 제거한다.</li>
+    <li>밥에 스팸, 참치, 계란을 넣는다.</li>
+    <li>마요네즈, 참기름, 참깨를 넣고 골고루 섞는다.</li>
+    <li>김과 양상추를 잘게 부셔서 위에 올린다.</li>
+    <li>김치는 반찬으로 곁들여 완성한다.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>✨ 추가 정보 <span class="badge">INFO</span></h2>
+  <div class="info-box">
+    <div class="info">
+      <strong>✔ 맛의 특징</strong>
+      <p>고소한 마요네즈와 참기름에 바삭한 김과 신선한 양상추가 어우러진다.</p>
+    </div>
+    <div class="info">
+      <strong>✔ 위생·안전</strong>
+      <p>불 사용을 최소화하고, 모든 재료는 미리 준비하여 안전하게 조리한다.</p>
+    </div>
+    <div class="info">
+      <strong>✔ 섭취 방법</strong>
+      <p>덮밥은 바로 먹고, 김치는 별도의 반찬으로 섭취한다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>학교 요리 프로젝트 소개 사이트 · HTML</p>
+</footer>
+
+</body>
+</html>
